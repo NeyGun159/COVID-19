@@ -1,0 +1,346 @@
+/* Mobile and tablet */
+@media (max-width: 1024px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .contain{
+        padding: 0 40px;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+    .header__contain{
+        padding: 0;
+        margin: 20px 40px;
+    }
+    .header__name{
+        font-family: 'Gelion';
+        color: #fa5652;
+        font-size: 22px;font-weight: 600;
+    }
+    .header__name, .header__nav{
+        display: block;
+    }
+    .header__list.active{
+        display: flex;
+        position: fixed;
+        top: 103px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        background-color: #fff;
+        padding-left: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding-top: 40px;
+    }
+    .header__nav.active>span{
+        display: none;
+    }
+    .header__nav.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__nav.active::after{
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+    .app__container{
+        padding-top: 103px;
+    }
+    .alert{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .statistical{
+        flex-direction: column;
+    }
+    .statistical__tools{
+        right: 0;
+    }
+    .statistical__map{
+        flex: none;
+    }
+    .statistical__find{
+        margin: 0;
+        left: 0;
+    }
+    .statistical__live-reports{
+        width: calc(100% - 40px - 40px);
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1024px) {
+    .alert__advice{
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .alert__img{
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 600px;
+    }
+    .virus__img{
+        display: none;
+    }
+    .virus__infor{
+        text-align: center;
+        width: 100%;
+    }
+    .virus__btn{
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .contagion__list{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .contagion__list-item:nth-child(3){
+        transform: translateX(50%);
+    }
+    .symptomps__img{
+        width: 100%;
+        background-size: contain;
+    }
+    .prevention__step-wrapper{
+        width: 350px;
+    }
+    .prevention__step-img{
+        height: 350px;
+        margin-left: 30px;
+    }
+    .footer__list-brand{
+        gap: 10px;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .alert{
+        padding-bottom: 40px;
+    }
+    .alert__texts{
+        width: 100%;
+        text-align: center;
+    }
+    .alert__title{
+        font-size: 28px;
+    }
+    .alert__advice{
+        font-size: 28px;
+        line-height: normal;
+    }
+    .alert__desc{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .alert__btn{
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+    .alert__img{
+        width: 100%;
+        height: 250px;
+        background-size: contain;
+        margin-top: 26px;
+
+    }
+    .virus{
+        padding-top: 40px;
+        text-align: center;
+    }
+    .virus__img{
+        display: none;
+    }
+    .virus__mean{
+        font-size: 28px;
+    }
+    .virus__name{
+        font-size: 28px;
+    }
+    .virus__desc{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .virus__btn{
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+    .contagion{
+        padding-top: 80px;
+        margin-bottom: 80px;
+    }
+    .contagion__texts{
+        padding-bottom: 80px;
+    }
+    .contagion__name{
+        font-size: 28px;
+    }
+    .contagion__title{
+        font-size: 28px;
+    }
+    .contagion__desc{
+        width: 100%;
+        font-size: 16px;
+        line-height: normal;
+    }
+    .contagion__list{
+        grid-template-columns: 1fr;
+    }
+    .contagion__list-title{
+        font-size: 28px;
+    }
+    .contagion__list-desc{
+        width: calc(100% - 12px - 12px);
+        font-size: 16px;
+        padding: 0 12px 78px 12px;
+        line-height: normal;
+    }
+    .symptomps{
+        padding-bottom: 80px;
+    }
+    .symptomps__name{
+        font-size: 28px;
+    }
+    .symptomps__title{
+        font-size: 28px;
+    }
+    .symptomps__desc{
+        font-size: 18px;
+        width: 100%;
+        line-height: normal;
+    }
+    .symptomps__img{
+        width: 100%;
+        height: 250px;
+        background-size: contain;
+        margin: 40px 0;
+    }
+    .prevention__name{
+        font-size: 28px;
+    }
+    .prevention__title{
+        font-size: 28px;
+    }
+    .prevention__desc{
+        font-size: 18px;
+        width: 100%;
+        line-height: normal;
+    }
+    .prevention__list-item{
+        flex-direction: column;
+    }
+    .prevention__list-item:nth-child(2), .prevention__list-item:nth-child(4){
+        flex-direction: column;
+    }
+    .prevention__step{
+        flex-direction: column;
+        width: 100%;
+    }
+    .prevention__step-wrapper{
+        width: 100%;
+    }
+    .prevention__step-name{
+        margin-top: 20px;
+        font-size: 36px;
+    }
+    .prevention__step-desc{
+        line-height: normal;
+        font-size: 18px;
+    }
+    .prevention__step-img{
+        width: 100%;
+        margin-top: 30px;
+        height: 250px;
+    }
+    .statistical{
+        padding-bottom: 80px;
+    }
+    .statistical__map{
+        width: 100%;
+        height: 200px;
+    }
+    .live-reports__list-item__wrapper:nth-child(1){
+        flex-direction: column;
+        width: 69px;
+    }
+    .live-reports__list-flag {
+        width: 30px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .live-reports__list-nation-name{
+        font-size: 26px;
+        margin: 15px 0 0 0;
+    }
+    .live-reports__list-people{
+        padding-right: 15px;
+    }
+    .help__title{
+        width: 100%;
+        font-size: 32px;
+    }
+    .help__wrapper{
+        width: 100%;
+    }
+    .help__input{
+        padding-left: 30px;
+    }
+    .footer__container{
+        flex-direction: column;
+    }
+    .footer__list{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0 25px 0;
+    }
+}
+@media (min-width: 1023px) and (max-width: 1496px) {
+    .contain{
+        padding: 0 100px;
+    }
+    .alert__texts {
+        width: 350px;
+    }
+    .alert__img {
+        width: 500px;
+        height: 407px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1230px) {
+    .contagion__list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contagion__list-item:nth-child(3){
+        transform: translateX(50%);
+    }
+}
+@media (min-width: 472px) and (max-width: 739px) {
+    .alert__img{
+        width: 407px;
+        margin: 0 auto;
+        background-size: cover;
+        margin-top: 26px;
+    }
+}
+@media (min-width: 424px) and (max-width: 739px) {
+    .symptomps__img {
+        width: 364px;
+        height: 250px;
+        background-size: contain;
+        margin: 0 auto;
+        margin-top: 46px;
+    }    
+}
+
+
